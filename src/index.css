@@ -1,0 +1,129 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .letterAVAILABLE {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .letterAVAILABLE:focus {
+    outline: none;
+  }
+  
+  .letterRULEDOUT {
+    background: rgb(136, 133, 133);
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .letterRULEDOUT:focus {
+    outline: none;
+  }
+  
+  .letterFOUND {
+    background: rgb(97, 218, 41);
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .letterFOUND:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .letter:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .guess-status {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .letter-info {
+    font-size: 16px;
+  }
+  
+  
+  .found-letter-info {
+    color: #00FF00;
+    font-size: 16px;
+  }
+  
+  
+  .winner-text {
+    color: #00FF00;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 48px;
+    animation: blinker 1s linear infinite;
+  }
+  
+  .warning-text {
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .game-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
